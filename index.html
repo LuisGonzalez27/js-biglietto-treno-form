@@ -11,17 +11,33 @@
 </head>
 <body>
     <div class="container pt-5">
-        <p class="m-0">Inserire il numero di chilometri da percorrere :</p>
-        <input type="number" value="0" id="km">
-        <p class="m-0 pt-2">Inserire l'età del passeggero :</p>
-        <input type="number" value="0" id="age">
-        <div class="pt-3">
-            <button id="calcola">Calcola</button>
+        <h1>Calcola il prezzo del biglietto</h1>
+        <div class="row">
+            <div class="col">
+                <label class="form-label">Inserire il numero di chilometri da percorrere :</label>
+                <input type="number" value="0" id="km" class="form-control">
+            </div>
+            <div class="col">
+                <label class="form-label">Inserire l'età del passeggero :</label>
+                <input type="number" value="0" id="age" class="form-control">
+            </div>
         </div>
-        <h5>Prezzo da pagare:</h5>
-        <p id="prezzoFinale"></p>
+        <div class="pt-3">
+            <button class="btn btn-primary" id="calcola">Calcola</button>
+        </div>
+
+        <h5 class="pt-3">Il tuo biglietto</h5>
+            <div class="card" style="width: 12rem;">
+                <img src="./img/train.png" class="card-img-top bg-warning img-thumbnail" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Prezzo</h5>
+                  <p class="fs-2" id="prezzoFinale"></p>
+                  <p id="kmSegnati"></p>
+
+                </div>
+            </div>
     </div>
-    
+   
     <script src="./js/script.js"></script>
 </body>
 </html>
